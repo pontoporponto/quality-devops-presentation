@@ -4,11 +4,11 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Quality in a Highly Transactional System</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/moon.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -25,8 +25,169 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section id="splash">
+					<h2>Quality in a Highly<br />Transactional System</h2>
+					<br />
+					<br />
+					<h4>Qualidade de Software - Escola Superior Tecnologia e Gestão, IPL, 18 May</h4>
+				</section>
+				<section id="pontoporponto">
+					<h2>Who am I?</h2>
+					<br />
+					<ul>
+						<li>Full Cycle Developer</li>
+						<li>Tech Lead@Project A</li>
+						<li>@pontoporponto
+							<ul>
+								<li>LinkedIn</li>
+								<li>Twitter</li>
+								<li>Github</li>
+							</ul>
+						</li>
+						<li>20 years of backend development (mostly!)</li>
+					</ul>
+				</section>
+				<section id="mindera">
+					<h2>Mindera</h2>
+					<h4>We use technology to build products we are proud of with people we love</h4>
+					<br /><br />
+					<h4><a href="https://mindera.com/people-and-culture/" target="_blank">Handbook</a></h4>
+				</section>
+				<section id="quality">
+					<h2>What is Quality?</h2>
+					<p class="fragment"><img src="https://jetline.co.za/wp-content/uploads/2017/12/quality-meme.jpg" /></p>
+				</section>
+				<section id="quality-definition">
+					<h2>What is Quality?</h2>
+					<ul>
+						<li class="fragment" data-fragment-index="1">Fit for use or purpose</li>
+						<li class="fragment" data-fragment-index="1">Degree of excellence of something</li>
+						<a href="" target="_blank"><p class="fragment" data-fragment-index="1" data-markdown>> #### Quality is a perceptual, conditional, and somewhat subjective attribute and may be understood differently by different people</p></a>
+					</ul>
+				</section>
+				<section id="quality-software">
+					<h2>What is Quality?</h2>
+					<h4>Software Engineering</h4>
+					<ul>
+						<li class="fragment" data-fragment-index="1">(Non)Functional Requirements</li>
+						<li class="fragment" data-fragment-index="2">Verification & Validation</li>
+						<li class="fragment" data-fragment-index="3">Test Pyramid</li>
+					</ul>
+				</section>
+				<section id="full-cycle-developer">
+					<a href="https://netflixtechblog.com/full-cycle-developers-at-netflix-a08c31f83249" target="_blank"><h2>Full Cycle Developer</h2></a>
+					<p class="fragment" data-markdown>> #### “Operate what you build” puts the devops principles in action by having the team that develops a system also be responsible for operating and supporting that system</p>
+					<aside class="notes">
+						Teams that feel operational pain are empowered to remediate the pain by changing their system design or code; they are responsible and accountable for both functions<br />
+					</aside>
+				</section>
+				<section id="project-tech">
+					<h2>Project A - Client X</h2>
+					<ul>
+						<li class="fragment" data-fragment-index="1">Microservices Architecture</li>
+						<li class="fragment" data-fragment-index="1">25 services - 90 pods</li>
+						<li class="fragment" data-fragment-index="1">Java/Spring - NodeJs</li>
+						<li class="fragment" data-fragment-index="1">Kubernetes</li>
+						<li class="fragment" data-fragment-index="1">Google Cloud Platform</li>
+						<li class="fragment" data-fragment-index="1">5 people</li>
+					</ul>
+				</section>
+				<section id="project-stats">
+					<h2>Project A - Client X</h2>
+					<img src="img/RPS.png" />
+					<img src="img/CPUUsage.png" style="height: 8em" />
+				</section>
+				<section id="project-wall">
+					<h2>Project A - Wall of Shame</h2>
+					<ul>
+						<li class="fragment" data-fragment-index="1">No Code Coverage</li>
+						<li class="fragment" data-fragment-index="1">No Static Code Analysis</li>
+						<li class="fragment" data-fragment-index="1">Few Integration tests</li>
+						<li class="fragment" data-fragment-index="1">No Stress tests</li>
+					</ul>
+				</section>
+				<section id="ownership">
+					<h2>Quality is Ownership</h2>
+					<h4 class="fragment" data-fragment-index="1">Empower each team member to react<br />to a crisis on its own</h4>
+					<ul>
+						<li class="fragment" data-fragment-index="2">No restrictions to production infrastructure</li>
+						<li class="fragment" data-fragment-index="2">Trainning on tooling</li>
+						<li class="fragment" data-fragment-index="2">No single point of contact</li>
+					</ul>
+					<aside class="notes">
+						Collective Code Ownership Pratice - XP
+					</aside>
+				</section>
+				<section id="tooling">
+					<h2>Quality is Proper Tooling</h2>
+					<h4 class="fragment" data-fragment-index="1">No more, no less<br />Just the amount needed</h4>
+					<ul>
+						<li class="fragment" data-fragment-index="2">Trainning on tooling</li>
+					</ul>
+				</section>
+				<section id="focus">
+					<h2>Quality is Focus</h2>
+					<h4 class="fragment" data-fragment-index="1">&lt;not-core-business&gt;-as-a-Service</h4>
+					<ul>
+						<li class="fragment" data-fragment-index="2">Cloud Provider</li>
+						<li class="fragment" data-fragment-index="2">Pipeline</li>
+						<li class="fragment" data-fragment-index="2">Telemetric systems</li>
+					</ul>
+				</section>
+				<section id="quality-observability-one">
+					<p class="fragment fade-out" data-fragment-index="1" data-markdown>## Quality is Monitoring</p>
+					<p class="fragment" data-fragment-index="1" data-markdown>## Quality is ~~Monitoring~~ Observability</p>
+					<ul>
+						<li class="fragment" data-fragment-index="2">Observability is the new Monitoring</li>
+						<li class="fragment" data-fragment-index="2">Headlump for Production</li>
+						<li class="fragment" data-fragment-index="2">Answer to the future unknows</li>
+						<li class="fragment" data-fragment-index="2">Logging; Metrics; Alarms</li>
+					</ul>
+					<aside class="notes">
+						Monitoring - known failure centric<br />
+						Observability - doesn’t necessarily have to be closely tied to an outage or a user complaint. It can be used as a way to better understand system performance and behavior, even during the what can be perceived as “normal” operation of a system<br />
+						Contextual Logging<br />
+						Traces<br />
+						Elasticsearch & Kibana (ELK Stack)<br />
+					</aside>
+				</section>
+				<section id="quality-observability-two">
+					<h2>Quality is Observability</h2>
+					<a href="https://martinfowler.com/articles/domain-oriented-observability.html" target="_blank"><h4 class="fragment" data-fragment-index="1">Domain-Oriented Observability</h4></a>
+					<ul>
+						<li class="fragment" data-fragment-index="2">Domain Probe</li>
+						<li class="fragment" data-fragment-index="2">Testing Observability</li>
+					</ul>
+					<aside class="notes">
+						Class Payment - Domin Logic
+					</aside>
+				</section>
+				<section id="resilience">
+					<h2>Quality is Resilience</h2>
+					<a href="https://www.slideshare.net/AmazonWebServices/high-availability-websites-part-one/12-Everything_fails_all_the_time" target="_blank"><p class="fragment" data-fragment-index="1" data-markdown>> #### Everything fails all the time</p></a>
+					<ul>
+						<li class="fragment" data-fragment-index="2">Embrace Errors and Failures</li>  
+						<li class="fragment" data-fragment-index="2">MTTR - Mean Time To Recovery</li>
+						<li class="fragment" data-fragment-index="2">Business Continuity</li>
+					</ul>
+				</section>
+				<section id="feedback">
+					<h2>Quality is Feedback</h2>
+					<p class="fragment" data-fragment-index="1" data-markdown>> #### Improving daily work is even more important than doing daily work</p>
+					<h4 class="fragment" data-fragment-index="1">Phoenix Project</h4>
+					<aside class="notes">
+						Feedback id the fuel of improving
+						Second Way - Define feedback look upstream; Shorten; Amplify
+					</aside>
+				</section>
+				<section id="teamwork">
+					<h2>Quality is Teamwork</h2>
+					<p class="fragment" data-fragment-index="1" data-markdown>> #### A great team doesn’t mean that they had the smartest people. What made those teams great is that everyone trusted one another. It can be a powerful thing when that magic dynamic exists.</p>
+					<h4 class="fragment" data-fragment-index="1">Phoenix Project</h4>
+				</section>
+				<section id="finale">
+					<h2>Thank You!</h2>
+				</section>
 			</div>
 		</div>
 
@@ -45,6 +206,22 @@
 					{ src: 'plugin/notes/notes.js', async: true }
 				]
 			});
+
+			Reveal.addEventListener( 'fragmentshown', function( event ) {
+				if(event.target.baseURI.includes('#/quality-observability-one')) {
+					if(event.fragments.length == 2) {
+						event.fragments[0].style.display = 'none';
+					}
+				}
+			} );
+
+			Reveal.addEventListener( 'fragmenthidden', function( event ) {
+				if(event.target.baseURI.includes('#/quality-observability-one')) {
+					if(event.fragments.length == 2) {
+						event.fragments[0].style.display = 'block';
+					}
+				}
+			} );
 		</script>
 	</body>
 </html>
